@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Teste Banco Neon</string>
+    <string name="send_money">Send money</string>
+    <string name="deposit_history">Deposit History</string>
+    <string name="retry">Retry</string>
+    <string name="value_to_send">Value to send</string>
+    <string name="insert_value_here">Insert value here:</string>
+    <string name="send">send</string>
+    <string name="money_sent_with_success">Money sent with success!</string>
+    <string name="the_value_must_be">The value must be higher than zero</string>
+    <string name="loading_your_section">Loading your section :D</string>
+    <string name="searching_where">Searching where your money went :D</string>
+    <string name="sending_your_money">Sending your money :D</string>
+</resources>

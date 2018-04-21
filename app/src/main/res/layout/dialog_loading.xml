@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_shape"
+    android:layout_width="@dimen/loading_dialog_size"
+    android:gravity="center"
+    android:layout_height="@dimen/loading_dialog_height">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/pacman_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView.Large"
+        app:indicatorName="PacmanIndicator"/>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Carregando..."/>
+
+</LinearLayout>

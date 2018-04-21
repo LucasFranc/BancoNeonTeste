@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="br.com.franco.lucas.bancoNeon.ui.activities.MainActivity"
+        android:background="@drawable/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:rotation="270"
+                android:background="@drawable/avatar_shape"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_avatar"
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:src="@drawable/avatar"
+                android:layout_margin="3dp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lucas Franco"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lucasfranco1795@gmail.com"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/double_margin_pattern"
+        android:layout_marginLeft="@dimen/double_margin_pattern"
+        android:layout_marginBottom="@dimen/double_margin_pattern">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_send_money"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:background="@drawable/btn_shape"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/send_money"
+            android:textAllCaps="true"
+            android:textSize="@dimen/btn_text"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_history"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:background="@drawable/btn_shape"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_pattern"
+            android:text="@string/deposit_history"
+            android:textAllCaps="true"
+            android:textSize="@dimen/btn_text"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    </RelativeLayout>
+
+

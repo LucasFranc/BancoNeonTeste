@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_pattern">16dp</dimen>
+    <dimen name="double_margin_pattern">32dp</dimen>
+    <dimen name="half_margin_pattern">8dp</dimen>
+    <dimen name="btn_text">18sp</dimen>
+    <dimen name="btn_height">56dp</dimen>
+    <dimen name="txt_title">16sp</dimen>
+    <dimen name="avatar_border_width">3dp</dimen>
+    <dimen name="btn_shape_size">24dp</dimen>
+    <dimen name="avatar_size">120dp</dimen>
+    <dimen name="avatar_person_size">56dp</dimen>
+    <dimen name="avatar_graph_size">40dp</dimen>
+    <dimen name="avatar_person_border_size">2dp</dimen>
+    <dimen name="subtitle_size">12sp</dimen>
+    <dimen name="chart_size">210dp</dimen>
+    <dimen name="stripe_top_size">8dp</dimen>
+    <dimen name="loading_dialog_size">300dp</dimen>
+    <dimen name="loading_dialog_height">150dp</dimen>
+</resources>

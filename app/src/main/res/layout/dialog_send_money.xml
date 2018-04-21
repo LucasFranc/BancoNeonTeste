@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/dialog_shape">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/close_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_alignParentEnd="true"
+        app:tint="@color/white"
+        android:layout_margin="@dimen/margin_pattern"
+        android:paddingRight="@dimen/half_margin_pattern"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_avatar"
+        android:layout_width="@dimen/avatar_person_size"
+        android:layout_height="@dimen/avatar_person_size"
+        android:src="@drawable/avatar"
+        android:layout_margin="@dimen/margin_pattern"
+        app:civ_border_width="@dimen/avatar_person_border_size"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="@color/strong_cyan"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="@dimen/avatar_person_size"
+        android:layout_height="@dimen/avatar_person_size"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_pattern"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lucas Franco"
+        android:textColor="@color/white"
+        android:layout_below="@id/profile_avatar"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/txt_title"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lucasfranco1795@gmail.com"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_name"
+        android:textColor="@color/white" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/label_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value_to_send"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_email"
+        android:layout_marginTop="@dimen/margin_pattern"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/relative_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_below="@id/label_send"
+        android:background="@drawable/relative_shape">
+
+        <com.blackcat.currencyedittext.CurrencyEditText
+            android:id="@+id/edt_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/strong_cyan"
+            android:textColorHint="@color/strong_cyan"
+            android:layout_centerHorizontal="true"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/btn_shape"
+        android:layout_margin="@dimen/margin_pattern"
+        android:text="@string/send"
+        android:textAllCaps="true"
+        android:textSize="@dimen/btn_text"
+        android:layout_below="@id/relative_value"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

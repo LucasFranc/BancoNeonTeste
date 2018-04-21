@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="send_money">ENVIAR DINHEIRO</string>
+    <string name="deposit_history">Histórico de envios</string>
+    <string name="retry">Tente novamente</string>
+    <string name="value_to_send">Valor a enviar:</string>
+    <string name="insert_value_here">Insira valor aqui</string>
+    <string name="send">Enviar</string>
+    <string name="money_sent_with_success">Dinheirinho transferido com sucesso!</string>
+    <string name="the_value_must_be">O valor deve ser maior que zero</string>
+    <string name="loading_your_section">Carregando sua sessãozinha :D</string>
+    <string name="searching_where">Procurando onde foi seu dinheirinho :D</string>
+    <string name="sending_your_money">Enviando seu dinheirinho :D</string>
+</resources>

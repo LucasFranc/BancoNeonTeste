@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/avatar_person_size"
+        android:layout_height="@dimen/avatar_person_size"
+        android:layout_margin="@dimen/margin_pattern"
+        android:src="@drawable/avatar"
+        app:civ_border_color="@color/strong_cyan"
+        app:civ_border_width="@dimen/avatar_person_border_size"/>
+
+    <ProgressBar
+        android:id="@+id/progress_avatar_person"
+        android:layout_width="@dimen/avatar_person_size"
+        android:layout_height="@dimen/avatar_person_size"
+        android:layout_margin="@dimen/margin_pattern"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_title"
+            android:text="Lucas Franco"
+            android:textColor="@color/strong_cyan"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/person_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(16) 988306445"
+            android:textColor="@color/strong_cyan" />
+
+        <TextView
+            android:id="@+id/person_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$ 120,00"
+            android:textSize="@dimen/subtitle_size"
+            android:textColor="@color/strong_cyan"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/strong_cyan"
+        android:layout_marginLeft="@dimen/margin_pattern"
+        android:layout_marginRight="@dimen/margin_pattern"
+        android:layout_below="@id/avatar"/>
+
+</RelativeLayout>
